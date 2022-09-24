@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="876.0" prefWidth="1240.0" style="-fx-background-color: transparent;" styleClass="button" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.logInFormController">
+   <children>
+      <AnchorPane fx:id="logInContext" layoutX="561.0" layoutY="94.0" prefHeight="619.0" prefWidth="488.0" style="-fx-background-radius: 20; -fx-background-color: linear-gradient(to right, #4b4348, #585055, #665c62, #746a6f, #82777d, #90868c, #9e969c, #ada6ac, #c0bcc1, #d4d2d6, #e9e8ea, #ffffff);;">
+         <children>
+            <JFXButton fx:id="btnLoggIn" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="286.0" layoutY="493.0" onMouseClicked="#logIn" prefHeight="38.0" prefWidth="137.0" ripplerFill="#035e19" style="-fx-background-color: linear-gradient(to right, #22b34c, #28b54f, #2db652, #32b855, #36b958, #41bd5f, #4bc265, #54c66c, #64ce78, #73d784, #82df91, #90e89d); -fx-background-radius: 20;" text="Log In" textFill="#0a0a0a">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="385.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/login_30px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="448.0" layoutY="14.0" onMouseClicked="#exitProgramme" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/cancel_48px.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtPassword" layoutX="145.0" layoutY="310.0" opacity="0.8" prefHeight="47.0" prefWidth="289.0" promptText="Password" style="-fx-background-radius: 20;" styleClass="textField" stylesheets="@styles/textField.css">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="txtUserName" layoutX="144.0" layoutY="203.0" opacity="0.8" prefHeight="47.0" prefWidth="283.0" promptText="UserName" style="-fx-background-radius: 20;" styleClass="textField" stylesheets="@styles/textField.css">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="61.0" fitWidth="46.0" layoutX="95.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/administrator_male_40px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="55.0" layoutX="97.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/lock_40px.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="81.0" layoutY="493.0" onMouseClicked="#newUser" opacity="0.66" prefHeight="38.0" prefWidth="127.0" style="-fx-background-radius: 25;" text="New User ?" textFill="#0a0a0a">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sideBar" layoutX="104.0" layoutY="55.0" prefHeight="691.0" prefWidth="477.0" style="-fx-background-radius: 25; -fx-background-color: linear-gradient(to left bottom, #ff5b6a, #ff7f5e, #faa05f, #f1bd6e, #e8d789);;">
+         <children>
+            <Label layoutX="34.0" layoutY="477.0" prefHeight="47.0" prefWidth="428.0" text="Welcome To Warehouse" textFill="#0a0a0a">
+               <font>
+                  <Font name="Courier New Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="491.0" fitWidth="450.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="79.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="136.0" fitWidth="144.0" layoutX="148.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/pngaaa.com-470080.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

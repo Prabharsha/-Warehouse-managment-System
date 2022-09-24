@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneSupplier" maxHeight="847.0" maxWidth="1116.0" prefHeight="847.0" prefWidth="1094.0" style="-fx-background-color: linear-gradient(to right bottom, #e4e9ed, #d4dade, #c4cbcf, #b4bcc0, #a5aeb1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.supplierManagementFormController">
+   <children>
+      <TextField fx:id="txtSearchID" layoutX="24.0" layoutY="237.0" prefHeight="38.0" prefWidth="213.0" promptText="Supplier ID" stylesheets="@styles/textField12.css" AnchorPane.leftAnchor="25.0" />
+      <TableView fx:id="tblSupplier" layoutX="10.0" layoutY="269.0" prefHeight="524.0" prefWidth="1026.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="colSupplierID" prefWidth="119.0" text="Supplier ID" />
+          <TableColumn fx:id="colSupplierName" prefWidth="181.0" text="Supplier Name" />
+            <TableColumn fx:id="colSupplierAddress" prefWidth="197.0" text="Supplier Address" />
+            <TableColumn fx:id="colSupplierContact" prefWidth="184.0" text="Supplier Contact" />
+            <TableColumn fx:id="colAmountToBePayed" prefWidth="170.0" text="Amount To Be Payed" />
+            <TableColumn fx:id="colEdit" prefWidth="114.0" text="Edit" />
+            <TableColumn fx:id="colDelete" prefWidth="108.0" text="Delete" />
+        </columns>
+      </TableView>
+      <Button layoutX="861.0" layoutY="236.0" mnemonicParsing="false" onAction="#addNewSupplier" prefHeight="38.0" prefWidth="202.0" styleClass="btn1" stylesheets="@styles/button1.css" text=" Add New Supplier" AnchorPane.rightAnchor="25.0" />
+      <Pane prefHeight="145.0" prefWidth="1094.0" style="-fx-background-color: linear-gradient(to bottom, #09203f, #1b3454, #2d4a69, #3f607f, #537895);">
+         <children>
+            <Label layoutX="458.0" layoutY="46.0" text="Suppliers " textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="256.0" layoutY="238.0" onAction="#searchSupplier" prefHeight="38.0" prefWidth="174.0" ripplerFill="WHITE" style="-fx-background-color: linear-gradient(to right, #16a137, #1caa3d, #22b344, #27bd4a, #2cc651); -fx-background-radius: 20;" text="     Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="278.0" layoutY="264.0" size="25" stroke="#070000" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="881.0" layoutY="264.0" size="25" stroke="BLACK" />
+   </children>
+</AnchorPane>

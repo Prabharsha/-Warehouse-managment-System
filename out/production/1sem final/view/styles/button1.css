@@ -1,0 +1,77 @@
+.btn{
+    -fx-background-color:#EB4559;
+    -fx-background-radius: 20;
+    -fx-text-fill: #0a0a0a;
+}
+.btn:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #C21414;
+}
+
+.btn1{
+    -fx-background-color:#1e3799;
+    -fx-text-fill: whitesmoke;
+    -fx-background-radius: 20;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+.btn1:hover{
+    -fx-background-color:#0c2461;
+    -fx-text-fill: white;
+}
+
+.btnCancel{
+    -fx-text-fill: #0a0a0a;
+    -fx-background-color: #ff4d4d;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+    -fx-border-color: #0a0a0a;
+    -fx-border-radius: 20;
+    -fx-font-size: 19;
+    -fx-font-family: "Courier New";
+
+}
+.btnCancel:hover{
+    -fx-background-color:#ff3838;
+}
+
+.btnOkay{
+    -fx-text-fill: #0a0a0a;
+    -fx-background-color: #32ff7e;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+    -fx-border-color: #0a0a0a;
+    -fx-border-radius: 20;
+    -fx-font-size: 19;
+    -fx-font-family: "Courier New";
+
+}
+.btnOkay:hover{
+    -fx-background-color: #1bbb51;
+}
+
+.btnDelete{
+    -fx-background-color:#ff3838;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-font-family: -apple-system;
+    -fx-font-style: 15px;
+    -fx-pref-height: 38;
+    -fx-pref-width: 150;
+    -fx-text-fill: white;
+}
+.btnDelete:hover{
+    -fx-background-color: #EA2027;
+}
+
+.btnCancel2{
+    -fx-background-color: #ff3838;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-font-family: -apple-system;
+    -fx-font-style: 15px;
+    -fx-text-fill: white;
+}
+.btncacel2:hover{
+    -fx-background-color: #EA2027;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewEmployeeContext" prefHeight="548.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addNewEmployeeFormController">
+    <children>
+        <Label alignment="CENTER" prefHeight="96.0" prefWidth="722.0" style="-fx-background-color: #303952;" text="Add New Employee" textFill="WHITE">
+            <font>
+                <Font name="Baskerville Old Face" size="35.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="490.0" onAction="#cancel" prefHeight="37.0" prefWidth="214.0" styleClass="btnCancel" stylesheets="@styles/button1.css" text="Cancel" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="98.0" />
+        <JFXButton buttonType="RAISED" layoutX="459.0" layoutY="490.0" onAction="#saveEmployee" prefHeight="37.0" prefWidth="214.0" styleClass="btnOkay" stylesheets="@styles/button1.css" text="save" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="98.0" />
+        <Label layoutX="41.0" layoutY="148.0" prefHeight="24.0" prefWidth="199.0" text="Employee NIC" textFill="#09006b">
+            <font>
+                <Font name="Courier New Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtEmployeeNIC" layoutX="291.0" layoutY="144.0" prefHeight="31.0" prefWidth="317.0" promptText="E0-00" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="41.0" layoutY="194.0" prefHeight="24.0" prefWidth="192.0" text="Employee Name" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="240.0" prefHeight="24.0" prefWidth="199.0" text="Employee Address" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="284.0" prefHeight="24.0" prefWidth="199.0" text="Employee Contact" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="332.0" prefHeight="24.0" prefWidth="214.0" text="Employee Job Type" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmployeeName" layoutX="291.0" layoutY="188.0" prefHeight="31.0" prefWidth="317.0" promptText="SomeOne" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtEmployeeAddress" layoutX="291.0" layoutY="234.0" prefHeight="31.0" prefWidth="317.0" promptText="SomeWhere" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtEmployeeContact" layoutX="291.0" layoutY="278.0" prefHeight="31.0" prefWidth="317.0" promptText="+94-" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtEmployeeJobType" layoutX="291.0" layoutY="326.0" prefHeight="31.0" prefWidth="317.0" promptText="type" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+    </children>
+</AnchorPane>

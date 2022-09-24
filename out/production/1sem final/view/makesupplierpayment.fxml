@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextMakePayment" prefHeight="520.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.makesupplierpaymentController">
+   <children>
+      <Label alignment="CENTER" prefHeight="96.0" prefWidth="722.0" style="-fx-background-color: #303952;" text="Make Supplier Payement" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="168.0" prefHeight="24.0" prefWidth="197.0" text="Supplier ID">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="214.0" prefHeight="24.0" prefWidth="197.0" text="Supplier Name">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="262.0" prefHeight="24.0" prefWidth="197.0" text="Supplier Address">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="310.0" prefHeight="24.0" prefWidth="197.0" text="Supplier Contact">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAmountPay" layoutX="401.0" layoutY="385.0" onKeyReleased="#textFieldKeyReleaseOnAction" prefHeight="36.0" prefWidth="244.0" promptText="Rs.0.00" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="172.0" layoutY="391.0" prefHeight="24.0" prefWidth="197.0" text="Pay Amount">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierID" layoutX="303.0" layoutY="167.0" prefHeight="27.0" prefWidth="278.0" style="-fx-background-color: #ffffff;" textFill="#09006b">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierName" layoutX="303.0" layoutY="212.0" prefHeight="27.0" prefWidth="278.0" style="-fx-background-color: #ffffff;" textFill="#09006b">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierAddress" layoutX="303.0" layoutY="260.0" prefHeight="27.0" prefWidth="278.0" style="-fx-background-color: #ffffff;" textFill="#09006b">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierContact" layoutX="303.0" layoutY="308.0" prefHeight="27.0" prefWidth="278.0" style="-fx-background-color: #ffffff;" textFill="#09006b">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="390.0" layoutY="461.0" onAction="#cancel" prefHeight="31.0" prefWidth="122.0" ripplerFill="WHITE" style="-fx-background-color: #2ed573;" text="Cancel" />
+      <JFXButton fx:id="btnPay" buttonType="RAISED" layoutX="553.0" layoutY="461.0" onAction="#payOnAction" prefHeight="31.0" prefWidth="122.0" ripplerFill="WHITE" style="-fx-background-color: #ff3838;" text="pay" textFill="WHITE" />
+      <Label fx:id="lblDate" layoutX="48.0" layoutY="466.0" prefHeight="21.0" prefWidth="148.0" styleClass="labelDateAndTimeDisplay" stylesheets="@styles/labelStyle.css" text="YYYY/MM/DD" />
+   </children>
+</AnchorPane>

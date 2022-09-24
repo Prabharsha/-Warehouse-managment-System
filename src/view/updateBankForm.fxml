@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="483.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.updateBankFormController">
+   <children>
+      <Pane fx:id="branchDetailsUpdateContext" layoutX="-1.0" prefHeight="90.0" prefWidth="661.0" style="-fx-background-color: linear-gradient(to right, #8032a1, #8e46ac, #9b58b7, #a96bc3, #b67dce);;">
+         <children>
+            <Label layoutX="185.0" layoutY="24.0" text="Update Bank Details">
+               <font>
+                  <Font name="Baskerville Old Face" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="45.0" layoutY="150.0" prefHeight="21.0" prefWidth="122.0" text="Bank ID" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBranchID" layoutX="232.0" layoutY="144.0" prefHeight="36.0" prefWidth="264.0" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtBranchName" layoutX="232.0" layoutY="194.0" prefHeight="36.0" prefWidth="264.0" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtBranchAddress" layoutX="232.0" layoutY="244.0" prefHeight="36.0" prefWidth="264.0" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtBranchContact" layoutX="232.0" layoutY="296.0" prefHeight="36.0" prefWidth="264.0" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtBranchEmail" layoutX="232.0" layoutY="346.0" prefHeight="36.0" prefWidth="264.0" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="45.0" layoutY="199.0" prefHeight="21.0" prefWidth="122.0" text="Bank Name" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="251.0" prefHeight="24.0" prefWidth="157.0" text="Bank Address" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="302.0" prefHeight="24.0" prefWidth="157.0" text="Bank Contact" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="353.0" prefHeight="24.0" prefWidth="157.0" text="Bank E-Mail" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="322.0" layoutY="420.0" mnemonicParsing="false" onAction="#cancel" prefHeight="31.0" prefWidth="136.0" styleClass="btnCancel" stylesheets="@styles/button1.css" text="Cancel" />
+      <Button layoutX="470.0" layoutY="420.0" mnemonicParsing="false" onAction="#saveUpdates" prefHeight="37.0" prefWidth="163.0" styleClass="btnOkay" stylesheets="@styles/button1.css" text="Save Updates" />
+   </children>
+</AnchorPane>

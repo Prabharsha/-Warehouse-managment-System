@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paymentContext" prefHeight="760.0" prefWidth="1134.0" style="-fx-background-color: linear-gradient(to left top, #38525e, #536b75, #6f848d, #8b9fa6, #a9bac0, #bbc8cf, #cdd7de, #dfe6ec, #e8ecf1, #f0f2f6, #f8f8fa, #ffffff);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.paymentsFormController">
+   <children>
+      <TabPane layoutX="9.0" layoutY="33.0" prefHeight="748.0" prefWidth="1115.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <tabs>
+          <Tab fx:id="supplierPaymentContext" text="     supplier Payments     ">
+            <content>
+              <AnchorPane fx:id="co" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" >
+                     <children>
+                        <TableView fx:id="tblSupplierPayments" layoutX="14.0" layoutY="189.0" prefHeight="490.0" prefWidth="1078.0">
+                          <columns>
+                            <TableColumn fx:id="colSupplierID" prefWidth="185.0" text="Supplier ID" />
+                            <TableColumn fx:id="colSupplierName" minWidth="0.0" prefWidth="208.0" text="Supplier Name" />
+                              <TableColumn fx:id="colSupplierAddress" minWidth="0.0" prefWidth="217.0" text="Supplier Address" />
+                              <TableColumn fx:id="colSupplierContact" minWidth="0.0" prefWidth="233.0" text="Supplier Contact" />
+                              <TableColumn fx:id="colAmountToBePayed" minWidth="0.0" prefWidth="234.0" text="Amount To Be Payed" />
+                          </columns>
+                        </TableView>
+                        <JFXButton buttonType="RAISED" layoutX="311.0" layoutY="113.0" onAction="#searchSUpplier" prefHeight="31.0" prefWidth="166.0" ripplerFill="WHITE" styleClass="btn1" stylesheets="@styles/button1.css" text="  Search Supplier" />
+                        <JFXTextField fx:id="txtSupplierID" alignment="CENTER" layoutX="36.0" layoutY="109.0" promptText="Supplier ID" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" unFocusColor="WHITE" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="322.0" layoutY="135.0" size="20" stroke="#363535" />
+                        <JFXButton buttonType="RAISED" layoutX="849.0" layoutY="112.0" onAction="#makeSPayment" prefHeight="31.0" prefWidth="229.0" ripplerFill="WHITE" style="-fx-background-color: #1dd1a1; -fx-background-radius: 10;" text="Make A Payment" textFill="#070000" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="    Supplier payment History    ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblSupPaymentHistory" layoutX="20.0" layoutY="60.0" prefHeight="592.0" prefWidth="1082.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+                          <columns>
+                            <TableColumn fx:id="colPaymentID" prefWidth="273.0" text="Payment ID" />
+                            <TableColumn fx:id="colPaymentSupplierID" prefWidth="288.0" text="Suppplier ID" />
+                              <TableColumn fx:id="colPaymentHistory" prefWidth="279.0" text="Payment Date" />
+                              <TableColumn fx:id="colPaymentAmount" prefWidth="237.0" text="Payment Amount" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="419.0" layoutY="47.0" prefHeight="22.0" prefWidth="269.0" text="All Supplier Payment History" textFill="#190072">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="     Employee Salaries     ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblsalaryDis" layoutX="433.0" layoutY="106.0" prefHeight="554.0" prefWidth="653.0">
+                           <columns>
+                              <TableColumn fx:id="colEmployeeNIC" prefWidth="204.0" text="Employee NIC" />
+                              <TableColumn fx:id="colSalaryMonth" minWidth="0.0" prefWidth="215.0" text="Salary Month" />
+                              <TableColumn fx:id="colSalaryPayed" minWidth="0.0" prefWidth="233.0" text="Salary Payed" />
+                           </columns>
+                        </TableView>
+                        <JFXButton fx:id="searchRecord" buttonType="RAISED" layoutX="122.0" layoutY="181.0" prefHeight="31.0" prefWidth="166.0" ripplerFill="WHITE" styleClass="btn1" stylesheets="@styles/button1.css" text="  Search Record" />
+                        <JFXTextField fx:id="txtEmployeeNIC" alignment="CENTER" layoutX="90.0" layoutY="106.0" promptText="Employee NIC" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" unFocusColor="WHITE" />
+                        <JFXButton fx:id="MakeAsalaryPayment" buttonType="RAISED" layoutX="91.0" layoutY="316.0" prefHeight="31.0" prefWidth="229.0" ripplerFill="WHITE" style="-fx-background-color: #1dd1a1; -fx-background-radius: 10;" text="Make A Salary Payment" textFill="#070000" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

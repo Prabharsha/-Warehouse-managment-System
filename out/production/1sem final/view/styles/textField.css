@@ -1,0 +1,20 @@
+.textField {
+    -fx-prompt-text-fill: black;
+    -fx-border-radius: 20px;
+    -fx-background-color: white;
+    -fx-text-fill:#0a0a0a ;
+}
+
+.input[type=text] {
+    -fx-border-radius: 10;
+    -border: 2px solid red;
+}
+
+.textFieldDataEnter{
+    -fx-font-family: "Baskerville Old Face";
+    -fx-font-size: 18;
+    -fx-background-color: white;
+    -fx-text-fill: #090046;
+    -fx-border-radius: 4;
+    -fx-border-color: #001350;
+}

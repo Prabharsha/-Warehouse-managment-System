@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemPaneContext" prefHeight="760.0" prefWidth="1134.0" style="-fx-background-color: linear-gradient(to left top, #38525e, #536b75, #6f848d, #8b9fa6, #a9bac0, #bbc8cf, #cdd7de, #dfe6ec, #e8ecf1, #f0f2f6, #f8f8fa, #ffffff);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.itemManagementFormController">
+   <children>
+      <TextField fx:id="txtSearchID" layoutX="14.0" layoutY="34.0" prefHeight="40.0" prefWidth="213.0" promptText="Item ID" stylesheets="@styles/textField12.css" />
+      <Button alignment="CENTER_RIGHT" layoutX="251.0" layoutY="36.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="37.0" prefWidth="144.0" styleClass="btnOkay" stylesheets="@styles/button1.css" text="Search" />
+      <FontAwesomeIconView fill="#f6ff00" glyphName="SEARCH" layoutX="270.0" layoutY="63.0" size="22" stroke="BLACK" />
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="886.0" layoutY="41.0" onAction="#addNewItem" prefHeight="40.0" prefWidth="219.0" ripplerFill="WHITE" styleClass="btn1" stylesheets="@styles/button1.css" text="     Add New Item">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="910.0" layoutY="70.0" size="25" stroke="BLACK" strokeWidth="2.0" />
+      <TableView fx:id="tblItems" layoutX="33.0" layoutY="164.0" prefHeight="587.0" prefWidth="1110.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+        <columns>
+          <TableColumn fx:id="colItemID" prefWidth="175.0" text="Item ID" />
+          <TableColumn fx:id="colItemDescription" prefWidth="178.0" text="Item Description" />
+            <TableColumn fx:id="colItemQNT" prefWidth="179.0" text="Item QNT On Hand" />
+            <TableColumn fx:id="colItemUnitPrice" prefWidth="166.0" text="Item Unit Price" />
+            <TableColumn fx:id="colSupplierID" prefWidth="154.0" text="Supplier ID" />
+            <TableColumn fx:id="colEdit" prefWidth="125.0" text="Edit Details" />
+            <TableColumn fx:id="colDelete" prefWidth="132.0" text="Delete Item" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

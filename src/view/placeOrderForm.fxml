@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="placeOrderContext" prefHeight="760.0" prefWidth="1134.0" style="-fx-background-color: linear-gradient(to left top, #38525e, #536b75, #6f848d, #8b9fa6, #a9bac0, #bbc8cf, #cdd7de, #dfe6ec, #e8ecf1, #f0f2f6, #f8f8fa, #ffffff);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.placeOrderFormController">
+   <children>
+      <JFXComboBox fx:id="cmbBranchName" labelFloat="true" layoutX="39.0" layoutY="57.0" prefHeight="31.0" prefWidth="243.0" promptText="Branch Name" />
+      <JFXComboBox fx:id="cmbItem" labelFloat="true" layoutX="47.0" layoutY="311.0" prefHeight="31.0" prefWidth="149.0" promptText="Item" />
+      <TableView fx:id="tblOrderListView" editable="true" layoutX="433.0" layoutY="218.0" prefHeight="415.0" prefWidth="662.0">
+        <columns>
+          <TableColumn fx:id="colItemID" prefWidth="205.0" text="Item ID" />
+          <TableColumn fx:id="colItemDescription" prefWidth="251.0" text="Item Decription" />
+            <TableColumn fx:id="colItemQNT" prefWidth="202.0" text="Qnt" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAddToList" buttonType="RAISED" layoutX="185.0" layoutY="492.0" onAction="#addToList" prefHeight="40.0" prefWidth="194.0" ripplerFill="WHITE" stylesheets="@styles/button1.css" text="Add To List">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn1" />
+         </styleClass>
+      </JFXButton>
+      <TextField fx:id="txtQNTEntered" layoutX="38.0" layoutY="497.0" onKeyReleased="#textFieldKeyRelease" prefHeight="31.0" prefWidth="127.0" promptText="Enter QNT" />
+      <Label fx:id="lblBranchID" layoutX="38.0" layoutY="128.0" prefHeight="31.0" prefWidth="213.0" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" text="Branch ID" />
+      <Label fx:id="lblBranchAddress" layoutX="39.0" layoutY="174.0" prefHeight="31.0" prefWidth="213.0" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" text="Branch Address" />
+      <Label fx:id="lblBranchContact" layoutX="39.0" layoutY="218.0" prefHeight="31.0" prefWidth="213.0" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" text="Branch Contact" />
+      <JFXButton buttonType="RAISED" layoutX="540.0" layoutY="682.0" onAction="#cancel" prefHeight="40.0" prefWidth="250.0" ripplerFill="WHITE" styleClass="btnCancel" stylesheets="@styles/button1.css" text="Cancel" />
+      <JFXButton buttonType="RAISED" layoutX="845.0" layoutY="682.0" onAction="#saveOrder" prefHeight="40.0" prefWidth="250.0" ripplerFill="WHITE" styleClass="btnOkay" stylesheets="@styles/button1.css" text="Save Order" />
+      <TextField fx:id="txtorderIDShow" editable="false" layoutX="433.0" layoutY="159.0" promptText="Order ID">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </TextField>
+      <Label alignment="CENTER" layoutX="433.0" layoutY="113.0" prefHeight="31.0" prefWidth="187.0" text="Order ID" textFill="#04007c">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="988.0" layoutY="45.0" prefHeight="23.0" prefWidth="136.0" styleClass="labelDateAndTimeDisplay" stylesheets="@styles/labelStyle.css" text="Time" />
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="988.0" layoutY="10.0" prefHeight="23.0" prefWidth="136.0" styleClass="labelDateAndTimeDisplay" stylesheets="@styles/labelStyle.css" text="Date" />
+      <TextField fx:id="lblQNTOnHand" editable="false" layoutX="137.0" layoutY="383.0" prefHeight="28.0" prefWidth="119.0" promptText="In Stock QNT" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" />
+      <TextField fx:id="lblItemID" editable="false" layoutX="239.0" layoutY="318.0" prefHeight="28.0" prefWidth="119.0" promptText="Item ID" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" />
+   </children>
+</AnchorPane>

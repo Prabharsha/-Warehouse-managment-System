@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewTeamContext" prefHeight="548.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addDeliveryTeamFormController">
+   <children>
+      <Pane prefHeight="96.0" prefWidth="722.0" style="-fx-background-color: #303952;">
+         <children>
+            <Label layoutX="190.0" layoutY="27.0" text="Add new Delivery Team" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="472.0" onAction="#cancel" prefHeight="37.0" prefWidth="214.0" styleClass="btnCancel" stylesheets="@styles/button1.css" text="Cancel" />
+      <JFXButton buttonType="RAISED" layoutX="419.0" layoutY="472.0" onAction="#saveTeam" prefHeight="37.0" prefWidth="214.0" styleClass="btnOkay" stylesheets="@styles/button1.css" text="save" />
+      <TextField fx:id="txtTeamID" layoutX="281.0" layoutY="164.0" prefHeight="31.0" prefWidth="317.0" promptText="T0 -00" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="62.0" layoutY="170.0" prefHeight="24.0" prefWidth="153.0" text="Team ID" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeamName" layoutX="281.0" layoutY="224.0" prefHeight="31.0" prefWidth="317.0" promptText="SomeONe" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="62.0" layoutY="230.0" prefHeight="24.0" prefWidth="153.0" text="Team Name" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="352.0" prefHeight="24.0" prefWidth="153.0" text="Team Address" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="292.0" prefHeight="24.0" prefWidth="153.0" text="Team Contact" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeamAddress" layoutX="281.0" layoutY="346.0" prefHeight="31.0" prefWidth="317.0" promptText="Address" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtTeamContact" layoutX="281.0" layoutY="286.0" prefHeight="31.0" prefWidth="317.0" promptText="047-*******" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+   </children>
+</AnchorPane>

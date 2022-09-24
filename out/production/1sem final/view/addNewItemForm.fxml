@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextAddNewItem" prefHeight="526.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addNewItemFormController">
+   <children>
+      <Pane prefHeight="96.0" prefWidth="722.0" style="-fx-background-color: #303952;">
+         <children>
+            <Label layoutX="257.0" layoutY="27.0" text="Add new Item" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="490.0" onAction="#cancel" prefHeight="37.0" prefWidth="214.0" styleClass="btnCancel" stylesheets="@styles/button1.css" text="Cancel" AnchorPane.bottomAnchor="10.0" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="419.0" layoutY="490.0" onAction="#saveItem" prefHeight="37.0" prefWidth="214.0" styleClass="btnOkay" stylesheets="@styles/button1.css" text="save" AnchorPane.bottomAnchor="10.0" />
+      <TextField fx:id="txtItemID" layoutX="281.0" layoutY="134.0" onKeyReleased="#textFieldKeyRelease" prefHeight="31.0" prefWidth="317.0" promptText="B0-00" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="44.0" layoutY="140.0" prefHeight="24.0" prefWidth="199.0" text="Item ID" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemDescription" layoutX="281.0" layoutY="194.0" onKeyReleased="#textFieldKeyRelease" prefHeight="31.0" prefWidth="317.0" promptText="Something" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="44.0" layoutY="200.0" prefHeight="24.0" prefWidth="199.0" text="Item Description" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemQNT" layoutX="281.0" layoutY="254.0" onKeyReleased="#textFieldKeyRelease" prefHeight="31.0" prefWidth="317.0" promptText="00" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtItemUnitPrice" layoutX="281.0" layoutY="316.0" onKeyReleased="#textFieldKeyRelease" prefHeight="31.0" prefWidth="317.0" promptText="0.00" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="44.0" layoutY="262.0" prefHeight="24.0" prefWidth="199.0" text="Item Quantity " textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="322.0" prefHeight="24.0" prefWidth="199.0" text="Item Unit Price" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="380.0" prefHeight="24.0" prefWidth="199.0" text="Supplier ID" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbSupplierID" focusColor="WHITE" layoutX="281.0" layoutY="377.0" prefHeight="31.0" prefWidth="317.0" promptText="Supplier ID" style="-fx-border-color: #130f40; -fx-border-radius: 5; -fx-background-color: white;" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+   </children>
+</AnchorPane>

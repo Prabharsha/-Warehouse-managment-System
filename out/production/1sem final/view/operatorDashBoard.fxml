@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="operatorDashBoardContext" prefHeight="900.0" prefWidth="1345.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.operatorDashBoardController">
+   <children>
+      <BorderPane prefHeight="900.0" prefWidth="1345.0">
+         <top>
+            <Pane prefHeight="140.0" prefWidth="1345.0" style="-fx-background-color: linear-gradient(to left, #f5f6fa, #dde0e9, #c6cbd9, #adb7c8, #95a3b8, #8292a8, #708298, #5e7288, #4e6075, #3f4f62, #303f50, #222f3e); -fx-border-color: #192a56; -fx-border-width: 1;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="142.0" prefWidth="212.0" style="-fx-background-color: #f5f6fa; -fx-border-color: #192a56;">
+                     <children>
+                        <Button alignment="TOP_LEFT" layoutX="50.0" layoutY="93.0" mnemonicParsing="false" onAction="#logOut" prefHeight="31.0" prefWidth="109.0" styleClass="btn" stylesheets="@styles/button1.css" text="Log Out">
+                           <font>
+                              <Font name="Baskerville Old Face" size="17.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" layoutX="129.0" layoutY="120.0" size="25" />
+                        <Label fx:id="lblJobTitle" alignment="CENTER" layoutX="14.0" layoutY="56.0" prefHeight="21.0" prefWidth="181.0" styleClass="text-field" stylesheets="@styles/textField12.css" text="Job Title" />
+                        <Label fx:id="lblUserName" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="17.0" prefHeight="21.0" prefWidth="181.0" styleClass="text-field" stylesheets="@styles/textField12.css" text="User Name" />
+                     </children>
+                  </Pane>
+                  <Label fx:id="lbltopLarge" alignment="CENTER" layoutX="503.0" layoutY="43.0" prefHeight="57.0" prefWidth="516.0" text="Welcome" textFill="#040046">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" alignment="CENTER" layoutX="1197.0" layoutY="14.0" prefHeight="26.0" prefWidth="134.0" text="HH:MM" textFill="#040046">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="753.0" prefWidth="211.0" style="-fx-background-color: linear-gradient(to top, #f5f6fa, #d3d6e0, #b0b7c7, #8e99ae, #6c7d96, #5a6d86, #495d76, #374e67, #32465c, #2c3e52, #273748, #222f3e);;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="-3.0" layoutY="80.0" mnemonicParsing="false" onAction="#orderDetails" prefHeight="80.0" prefWidth="214.0" stylesheets="@styles/dashBoardStyle.css" text="     Order Details">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="-3.0" layoutY="160.0" mnemonicParsing="false" onAction="#itemManagement" prefHeight="80.0" prefWidth="214.0" stylesheets="@styles/dashBoardStyle.css" text="     Items">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="-3.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="80.0" prefWidth="214.0" stylesheets="@styles/dashBoardStyle.css" text="     Place Order">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="-3.0" layoutY="240.0" mnemonicParsing="false" onAction="#payements" prefHeight="80.0" prefWidth="214.0" stylesheets="@styles/dashBoardStyle.css" text="     Payments">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane fx:id="paneContextx" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f5f6fa;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="742.0" fitWidth="757.0" layoutX="181.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

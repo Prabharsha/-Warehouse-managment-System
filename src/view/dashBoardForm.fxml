@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchor" prefHeight="847.0" prefWidth="1375.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashBoardFormController">
+   <children>
+      <BorderPane prefHeight="847.0" prefWidth="1375.0">
+         <left>
+            <Pane prefHeight="802.0" prefWidth="281.0" style="-fx-background-color: linear-gradient(to right, #45578a, #596893, #6d799b, #828ba4, #979dac);;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="195.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1f436c, #325986, #456fa0, #5987bc, #6c9fd8);;">
+                     <children>
+                        <ImageView fitHeight="78.0" fitWidth="97.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblUserNameDis" alignment="CENTER" layoutX="30.0" layoutY="110.0" prefHeight="28.0" prefWidth="212.0" text="User Name" textFill="WHITE">
+                           <font>
+                              <Font name="Courier New Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUserTitleDis" alignment="CENTER" layoutX="30.0" layoutY="146.0" prefHeight="28.0" prefWidth="213.0" text="Title" textFill="WHITE">
+                           <font>
+                              <Font name="Courier New Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="123.0" layoutY="40.0" mnemonicParsing="false" onAction="#logOut" prefHeight="33.0" prefWidth="127.0" styleClass="btn" stylesheets="@styles/button1.css" text="  Log Out">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="133.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/icons8-logout-rounded-left-64.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Button alignment="TOP_LEFT" layoutY="205.0" mnemonicParsing="false" onAction="#manageBanks" prefHeight="80.0" prefWidth="281.0" stylesheets="@styles/dashBoardStyle.css" text="  Banks">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="BANK" size="30" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutY="285.0" mnemonicParsing="false" onAction="#manageSuppliers" prefHeight="80.0" prefWidth="281.0" stylesheets="@styles/dashBoardStyle.css" text="  Suppliers">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CUBES" size="30" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutY="365.0" mnemonicParsing="false" onAction="#ManageEmployees" prefHeight="80.0" prefWidth="281.0" stylesheets="@styles/dashBoardStyle.css" text="  Employess">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER" size="30" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutY="445.0" mnemonicParsing="false" onAction="#manageDeliveryTeams" prefHeight="80.0" prefWidth="281.0" stylesheets="@styles/dashBoardStyle.css" text="  Delivery Teams">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TRUCK" size="30" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutY="525.0" mnemonicParsing="false" onAction="#manageFinances" prefHeight="80.0" prefWidth="281.0" stylesheets="@styles/dashBoardStyle.css" text="  Finances">
+                     <styleClass>
+                        <String fx:value="sidebar" />
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-icon" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Baskerville Old Face" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="MONEY" size="30" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="timeLabel" layoutX="14.0" layoutY="761.0" prefHeight="27.0" prefWidth="93.0" text="HH:MM" textFill="#0dff05">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <AnchorPane fx:id="rootPane" prefHeight="847.0" prefWidth="1094.0" style="-fx-background-color: linear-gradient(to left top, #4a5153, #5a6163, #6b7274, #7c8385, #8d9497, #9ca2a6, #acb1b4, #bcc0c3, #cdcfd2, #dedfe1, #efeff0, #ffffff);;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="653.0" fitWidth="682.0" layoutX="221.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/1.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutY="33.0" prefHeight="200.0" prefWidth="1094.0" />
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

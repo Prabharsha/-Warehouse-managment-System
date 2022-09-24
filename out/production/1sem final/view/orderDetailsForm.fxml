@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="orderDetailsContext" prefHeight="760.0" prefWidth="1134.0" style="-fx-background-color: linear-gradient(to left top, #38525e, #536b75, #6f848d, #8b9fa6, #a9bac0, #bbc8cf, #cdd7de, #dfe6ec, #e8ecf1, #f0f2f6, #f8f8fa, #ffffff);" stylesheets="@styles/labelStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.orderDetailsFormController">
+   <children>
+      <JFXComboBox fx:id="cmbSelectOrder1" focusColor="#092a86" labelFloat="true" layoutX="38.0" layoutY="66.0" prefHeight="31.0" prefWidth="231.0" promptText="Select Order" unFocusColor="#050925">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <TableView fx:id="tblListView1" layoutX="676.0" layoutY="81.0" prefHeight="282.0" prefWidth="438.0" AnchorPane.leftAnchor="676.0" AnchorPane.rightAnchor="20.0">
+        <columns>
+          <TableColumn fx:id="colItemID1" prefWidth="128.0" text="Item ID" />
+          <TableColumn fx:id="colItemDescription1" prefWidth="165.0" text="Item Description" />
+            <TableColumn fx:id="colItenQNT1" prefWidth="143.0" text="Item QNT" />
+        </columns>
+      </TableView>
+      <Separator layoutX="20.0" layoutY="379.0" opacity="0.8" prefHeight="3.0" prefWidth="1094.0" AnchorPane.bottomAnchor="382.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="379.0" />
+      <Label fx:id="lblBrancID1" layoutX="38.0" layoutY="138.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" text="Branch ID" />
+      <Label fx:id="lblBranchName1" layoutX="242.0" layoutY="138.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" text="Branch Name" />
+      <Label fx:id="lblOrderDate1" layoutX="457.0" layoutY="138.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" stylesheets="@styles/labelStyle.css" text="Order Date" />
+      <JFXComboBox fx:id="cmbSelectDeliveryteam" layoutX="38.0" layoutY="264.0" prefHeight="31.0" prefWidth="204.0" promptText="Select Delivery Team" />
+      <JFXButton buttonType="RAISED" layoutX="353.0" layoutY="264.0" onAction="#dispatchOrder" prefHeight="31.0" prefWidth="194.0" ripplerFill="WHITE" style="-fx-background-color: #26de81; -fx-background-radius: 15;" text="Dispatch Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label alignment="CENTER" layoutX="837.0" layoutY="54.0" prefHeight="21.0" prefWidth="277.0" text="List Of Items" textFill="#110151">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBranchID2" layoutX="50.0" layoutY="516.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" text="Branch ID" />
+      <Label fx:id="lblBranchName2" layoutX="50.0" layoutY="636.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" text="Branch Name" />
+      <Label fx:id="lblorderDate2" layoutX="50.0" layoutY="579.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" text="Order Date" />
+      <TableView fx:id="tblListView2" layoutX="676.0" layoutY="462.0" prefHeight="282.0" prefWidth="438.0">
+         <columns>
+            <TableColumn fx:id="colitemID2" prefWidth="128.0" text="Item ID" />
+            <TableColumn fx:id="colItemDescription2" prefWidth="165.0" text="Item Description" />
+            <TableColumn fx:id="colItemQNT2" prefWidth="143.0" text="Item QNT" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="837.0" layoutY="430.0" prefHeight="21.0" prefWidth="277.0" text="List Of Items" textFill="#110151">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDeliveryTeam" layoutX="50.0" layoutY="696.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" text="Delivery Team " />
+      <Label fx:id="lblDispatchedDate" layoutX="305.0" layoutY="579.0" prefHeight="31.0" prefWidth="180.0" styleClass="textLabel2" text="Dispatced Date" />
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="944.0" layoutY="12.0" prefHeight="31.0" prefWidth="180.0" styleClass="labelDateAndTimeDisplay" stylesheets="@styles/labelStyle.css" text="HH/MM" textFill="#050065">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="409.0" layoutY="14.0" prefHeight="21.0" prefWidth="277.0" text="Orders To Dispatch" textFill="#0a6b34">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="409.0" layoutY="392.0" prefHeight="21.0" prefWidth="277.0" text="Orders Dispatched" textFill="#9a0303">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbSelectOrder2" focusColor="#092a86" labelFloat="true" layoutX="37.0" layoutY="439.0" prefHeight="31.0" prefWidth="231.0" promptText="Select Order" unFocusColor="#050925">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton buttonType="RAISED" layoutX="353.0" layoutY="306.0" onAction="#onActionCancelOrder" prefHeight="31.0" prefWidth="194.0" ripplerFill="WHITE" style="-fx-background-radius: 15; -fx-background-color: #ff6b6b;" text="Cancel Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

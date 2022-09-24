@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="addNewSupplierContext" prefHeight="548.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addNewSupplierFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="96.0" prefWidth="722.0" style="-fx-background-color: #303952;" text="Add New Supplier" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="490.0" onAction="#cancel" prefHeight="37.0" prefWidth="214.0" styleClass="btnCancel" stylesheets="@styles/button1.css" text="Cancel" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="98.0" />
+      <JFXButton buttonType="RAISED" layoutX="459.0" layoutY="490.0" onAction="#saveSuppllier" prefHeight="37.0" prefWidth="214.0" styleClass="btnOkay" stylesheets="@styles/button1.css" text="save" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="98.0" />
+      <Label layoutX="23.0" layoutY="168.0" prefHeight="24.0" prefWidth="197.0" text="Supplier ID" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSupplierID" layoutX="294.0" layoutY="162.0" prefHeight="31.0" prefWidth="317.0" promptText="S0 00" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <Label layoutX="23.0" layoutY="214.0" prefHeight="24.0" prefWidth="197.0" text="Supplier Name" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="262.0" prefHeight="24.0" prefWidth="197.0" text="Supplier Address" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="310.0" prefHeight="24.0" prefWidth="197.0" text="Supplier Contact" textFill="#09006b">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSupplierName" layoutX="294.0" layoutY="208.0" prefHeight="31.0" prefWidth="317.0" promptText="Some One" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtSupplierAddress" layoutX="294.0" layoutY="256.0" prefHeight="31.0" prefWidth="317.0" promptText="Some Where" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+      <TextField fx:id="txtSupplierContact" layoutX="294.0" layoutY="304.0" prefHeight="31.0" prefWidth="317.0" promptText="+94 - 1234567" styleClass="textFieldDataEnter" stylesheets="@styles/textField.css" />
+   </children>
+</AnchorPane>

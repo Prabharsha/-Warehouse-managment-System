@@ -1,0 +1,22 @@
+.sidebar{
+    -fx-background-color: linear-gradient(to right, #45578a, #596893, #6d799b, #828ba4, #979dac) ;
+}
+
+.sidebar-btn-text{
+    -fx-text-fill: #090046;
+    -fx-text-alignment: center;
+
+}
+.sidebar-btn:hover{
+    -fx-border-width: 0px 5px 0px 0px;
+    -fx-border-color: #32ff7e;
+    -fx-border-style: solid;
+
+}
+.sidebar-btn:hover.sidebar-btn-icon{
+    -fx-fill: white;
+}
+.sidebar-btn:hover.sidebar-btn{
+    -fx-background-color:  linear-gradient(to left, #7f8fa6, #677a9a, #50658f, #3b5082, #273c75);;
+    -fx-text-fill: white;
+}
